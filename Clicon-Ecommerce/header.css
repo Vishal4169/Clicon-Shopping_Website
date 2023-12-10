@@ -1,0 +1,175 @@
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.advertisementTab{
+    position: relative;
+    background-color: #191C1F;
+}
+
+  .advertisementPopup{
+    margin: auto;
+    max-width: 1320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5em;
+  }
+
+  .socialMediaTab{
+    text-align: center;
+  }
+  
+
+.socialMediaTab{
+    background-color: #1B6392;
+}
+
+  .socialMediaLinks{
+    margin: auto;
+    display: flex;
+    max-width: 1320px;
+    justify-content: space-between;
+    padding:0.5em;
+  }
+  
+  .socialMediaComponents{
+      display: flex;
+      justify-content: center;
+      gap:0.5em
+  }
+  .blank_line{
+      border-left: 2px solid #ADB7BC;
+  }
+  
+   .ad_alignText{
+      display: inline-block;
+      background-color: #F3DE6D;
+      padding:0.2em;
+      color:#191C1F;
+      transform: rotate(-4deg);
+  
+  }
+  
+  .adOffer--bold{
+      display: inline-flex;
+      font-size: 1.4em;
+      color:#EBC80C
+  }
+  
+  .advertisement__pattern--btn button{
+      padding:0.2em;
+      background-color: #EBC80C;
+      border: none;    
+  }
+  .advertisementPopup{
+    color: #E4E7E9;
+  }
+  
+  .advertisement--close button{
+    position: absolute;
+      background-color: transparent;
+      top:0.5em;
+      right:3em;
+      border: none;
+  }
+  
+  .socialMediaLinks--Language--Currency select{
+     border: none;
+     background-color: transparent;
+     color: #E4E7E9;
+  }
+
+.navigationTab{
+    background-color: #1B6392;
+} 
+
+.navigation{
+    display: flex;
+    margin: auto;
+    max-width: 1320px;
+    justify-content: space-between;
+   
+    padding:0.5em;
+}
+
+  .navigation--companyIcon{
+      display: flex;
+      justify-content: center;
+  }
+  
+
+  .essentialComponent{
+    display: flex;
+    margin: auto;
+    max-width: 1320px;
+    justify-content: space-between;
+    padding:0.5em;
+  }
+  
+  .essential select{
+      align-items: center;
+      padding:0.2em;
+      background-color: #f2f4f5;
+  }
+  
+
+  .navigation--companyIcon h2{
+    display: block;
+    padding-top: 5%;
+  }
+
+  .navigation--companyIcon{
+    color:#E4E7E9
+  }
+  
+/* Search Tab */
+  form {
+    background-color: aliceblue;
+    color: #ADB7BC;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+  }
+  
+  input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    width: 400px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }
+
+  button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 1;
+  }
+  button[type="submit"]:focus,
+  input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+  }
+    

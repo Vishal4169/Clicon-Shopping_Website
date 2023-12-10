@@ -1,0 +1,124 @@
+.newsletter{
+    background-color:  #1B6392;
+    text-align: center;
+    display: grid;
+    grid-auto-flow: row;
+    gap:0.5em;
+}
+
+
+.newsletter--Icons{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+.newsletter--emailAddress{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+.newsletter--emailAddress input{
+    width: 100%
+}
+
+
+
+.link{
+    display: grid;
+    grid-auto-flow: column;
+  
+    background-color:#191C1F ;
+}
+
+
+.link__companydetails--seperator{
+    display: flex;
+    padding:20px;
+}
+
+
+.linkCompanyName--title{
+    font-size: 20px;
+    color: #F2F4F5;
+} 
+
+.link--contact p{
+    color:#475156;
+    font-size: 15px;
+
+}
+
+.link__companydetails h4{
+    color: #E4E7E9;
+    font-size: 18px;
+}
+
+.link__companydetails{
+    width: 200px;
+    padding:10px;
+}
+
+.link--title{
+    color: #F2F4F5;
+    font-size: 15px;
+}
+
+.link--popularTag{
+    width:200px;
+}
+
+.link--popularTag .link--button{
+    padding:10px;
+}
+.link--popularTag .link--button button{
+    margin: 2px;
+    color: #E4E7E9;
+    background-color: #191C1F;
+    border:1px solid #475156;
+    border-radius: 2px;
+}
+
+.quicklinks--items p{
+    color: #475156;
+}
+
+.link--app{
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #475156;
+    
+    width: 150px;
+}
+
+.link--app .link--icon svg{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+.link--app .link--content  h4{
+    font-size: 14px;
+}
+
+.link--app .link--content  p{
+font-size: 16px;
+
+}
+
+.link--app .link--content{
+margin-top: -2%;
+}
+
+
+.topCategory--products p{
+    color:#475156
+}
+
+
+.topCategory--products h4{
+    font-size: 15px;
+    color: #E4E7E9;
+
+}

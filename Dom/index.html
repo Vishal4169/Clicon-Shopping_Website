@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <section id="calculator">
+        <div class="placeholder">
+            <input type="text">
+        </div>
+        <div class="operators">
+            <button class="element">Ac</button>
+            <button class="element">&Sqrt;</button>
+            <button class="element">%</button>
+            <button class="element">/</button>
+            <button class="element">7</button>
+            <button class="element">8</button>
+            <button class="element">9</button>
+            <button class="element">x</button>
+            <button class="element">4</button>
+            <button class="element">5</button>
+            <button class="element">6</button>
+            <button class="element">-</button>
+            <button class="element">1</button>
+            <button class="element">2</button>
+            <button class="element">3</button>
+            <button class="element">+</button>
+            <button class="element">0</button>
+            <button class="element">.</button>
+            <button class="element">+/-</button>
+            <button class="element">=</button>
+        </div>
+    </section>
+
+    <div>
+        <p id="text1">Javascript Dom</p>
+        <p id="text1">Javascript</p>
+    </div>
+
+    <div>
+        <input type="radio" name="language" value="js">
+        <input type="radio" name="language" value="java">
+    </div>
+
+    <div>
+        <p class="msg">hello world</p>
+        <p class="msg">welcome</p>
+    </div>
+
+    <div class="template">
+        <p class="hello">hello</p>
+        <div id="temp">
+            <p class="hello">hello</p>
+            <p class="hello">hello</p>
+        </div>
+    </div>
+
+    <div class="childParentRelationship">
+        <p>1</p>
+        <p class="accessPrevious">2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+
+    <!--Create an list  and adding a new li in the end  using dom-->
+    <div>
+        <ul class="append">
+             <li>home</li>
+             <li>contact</li>
+        </ul>
+    </div>
+    
+</body>
+
+<script>
+
+    let menu= document.getElementsByClassName("append");
+    console.log(menu.item)
+    // let newList=document.createElement("li");
+     let newList=document.createElement("li")
+     newList.innerHTML="address"
+    // newList.innerHTML="address";
+    console.log(newList)
+     menu.appendChild(newList);
+     
+    //  firstChild
+    //  firstElementChild
+    //  lastElementChild
+    //  childNodes
+    // previousElementSibling
+    // nextElementSibling
+
+
+    let parentSelector=document.querySelector(".accessPrevious");
+    console.log(parentSelector.nextElementSibling);
+
+    // Creating an new div tag using the createElement method
+    let createDiv=document.createElement("div");
+    createDiv.innerHTML="<p>welcome</p> <h1>Numentica</h1>";
+    createDiv.id="newId";
+    document.body.appendChild(createDiv);
+    console.log(createDiv);
+    
+
+
+   let parentElement=document.querySelector(".template");
+   console.log(parentElement.parentNode);
+
+    let templateContainerClassSelector=document.getElementById("temp");
+    let another=templateContainerClassSelector.getElementsByClassName("hello");
+    
+
+    console.log(another)
+
+    let user1=document.getElementById("text1");
+    console.log(user1) 
+
+    let language_byName=document.getElementsByName("language");
+    console.log(language_byName)
+
+    let tagSelector=document.getElementsByTagName("p");
+    console.log(tagSelector)
+
+    let classSelector=document.getElementsByClassName("msg")
+    console.log(classSelector)
+</script>
+
+
+</html>
