@@ -12,6 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -52,7 +54,7 @@
                     </div>
 
                     <div class="blank_line"></div>
-                    <div class="socialMedia_language-country">
+                    <div class="socialMedia_language-country d-flex gap-1">
                         <select class="form-select" aria-label="Disabled select example">
                             <option selected>Eng</option>
                             <option value="1">One</option>
@@ -154,65 +156,67 @@
 
     <main class="container">
 
-        <section class="productOfferTab row mt-4 ">
-            <div class="product_Slideshow col-xl-8 col-lg-8 pr-4 col-md-7">
-                <div class="contentImageSeperator row">
-                    <div class="displayItem col-xl-6 d-flex flex-column align-self-center pl-5 col-lg-6 col-md-5">
+        <section class="productOfferTab d-flex gap-1 mt-4">
+
+            <div class="card col-xl-8">
+
+                <div class="d-flex">
+                    <div class="offerProduct0 align-self-center p-2">
                         <span>-THE BEST PLACE TO PLAY</span>
                         <h1>Xbox Consoles</h1>
                         <p>Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.</p>
-
                         <button class="btn">SHOP NOW &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
-
                     </div>
-                    <div class="productImage col-xl-6 position-relative col-md-6 col-lg-6 col-md-7">
+                    <div class="productImage  position-relative p-2">
                         <div class="circle position-absolute">
                             <span>$299</span>
                         </div>
-
                         <img src="./resources/playstation.png" alt="" class="img-fluid  ">
                     </div>
                 </div>
-
             </div>
 
-            <div class="offersProduct col-xl-4  col-lg-4 col-md-5 ">
+            <div class="offersProduct d-flex flex-wrap gap-3 col-xl-4">
+                <div class="card">
+                    <div class="offerProduct1 d-flex p-2">
+                        <div class="offerProduct1--content align-self-center">
+                            <p>SUMMER SALES</p>
+                            <h3>New Google Pixel 6 Pro</h3>
+                            <div>
+                                <button class="btn">SHOP NOW &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
 
-                <div class="offerProduct1 row  d-flex align-self-center p-2">
-                    <div class="offerProduct1--content col-xl-6 p-2 col-lg-6 col-md-5">
-                        <p>SUMMER SALES</p>
-                        <h3>New Google Pixel 6 Pro</h3>
-                        <div>
-                            <button class="btn">SHOP NOW &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
                         </div>
-
-                    </div>
-                    <div class="offerProduct1--img col-xl-6  col-lg-6 col-md-7">
-                        <div class="text">
-                            <span>29% OFF</span>
+                        <div class="offerProduct1--img">
+                            <div class="text">
+                                <span>29% OFF</span>
+                            </div>
+                            <img src="./resources/phone.png" class="img-fluid">
                         </div>
-                        <img src="./resources/phone.png" class="img-fluid">
                     </div>
 
                 </div>
-                <div class="offerProduct2 row mt-1 p-1">
-                    <div class="product2--image col-xl-6 col-lg-6 col-md-6">
-                        <img src="./resources/headphone.png" alt="" class="img-fluid">
-                    </div>
 
-                    <div class="layer2--Content col-xl-6 p-2 col-lg-6 col-md-6">
-                        <h3>Xiaomi FlipBuds Pro</h3>
-                        <span>$299 USD</span>
-                        <div>
-                            <button class="btn">SHOP NOW &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                <div class="card">
+                    <div class="offerProduct2 d-flex p-2">
+                        <div class="product2--image">
+                            <img src="./resources/headphone.png" alt="" class="img-fluid">
                         </div>
 
+                        <div class="layer2--Content">
+                            <h3>Xiaomi FlipBuds Pro</h3>
+                            <span>$299 USD</span>
+                            <div>
+                                <button class="btn">SHOP NOW &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
 
-            <section class="container popupPage_signin col-3 position-absolute ">
+            <section class="container popupPage_signin col-xl-3 col-lg-3 col-md-6 position-absolute ">
 
                 <div class="sigIn d-flex flex-column p-4">
                     <h4 class="text-center">Sign in to your account</h4>
@@ -237,8 +241,8 @@
         </section>
 
         <section class="sep_space mt-5 p-3">
-            <section class="sep d-flex justify-content-between ">
-                <div class="features__Element row  ">
+            <section class="sep d-flex justify-content-between">
+                <div class="features__Element d-flex ">
                     <div class="image d-flex align-self-center ">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -261,7 +265,7 @@
                 <div class="emptydiv">
 
                 </div>
-                <div class="features__Element row">
+                <div class="features__Element d-flex">
                     <div class="image d-flex align-self-center">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -288,7 +292,7 @@
                 <div class="emptydiv ">
 
                 </div>
-                <div class="features__Element row">
+                <div class="features__Element d-flex">
                     <div class="image d-flex align-self-center">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -311,7 +315,7 @@
                 <div class="emptydiv ">
 
                 </div>
-                <div class="features__Element row ">
+                <div class="features__Element d-flex ">
                     <div class="image d-flex align-self-center">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -342,7 +346,7 @@
 
         <section class="productList row">
 
-            <div class="exploreProduct col-xl-4 position-relative  col-lg-4">
+            <div class="exploreProduct col-xl-4 position-relative  col-lg-4 col-md-4">
 
                 <div class="offerPercentage--Reuse position-absolute p-1">
                     <span>32% OFF</span>
@@ -379,10 +383,10 @@
                     <i class="fa-regular fa-eye btn--add_cart align-self-center"></i>
                 </div>
             </div>
-            <div class="ProductItems col-xl-8 col-lg-8">
+            <div class="ProductItems col-xl-8 col-lg-8 col-md-8">
                 <div class="seperator_productItems row">
 
-                    <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                    <div class="eachProduct col-xl-3 position-relative col-lg-3 col-md-3">
                         <div class="offersPercentage position-absolute">
                             <span>32% OFF</span>
                         </div>
@@ -401,7 +405,7 @@
 
                     </div>
 
-                    <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                    <div class="eachProduct col-xl-3 position-relative col-lg-3 col-md-3">
 
                         <div class="productImage">
                             <img src="./resources/phone1.png" alt="" class="img-fluid">
@@ -417,7 +421,7 @@
 
                     </div>
 
-                    <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                    <div class="eachProduct col-xl-3 position-relative col-lg-3 col-md-3">
 
                         <div class="offersPercentage position-absolute">
                             <span>32% OFF</span>
@@ -435,7 +439,7 @@
 
                     </div>
 
-                    <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                    <div class="eachProduct col-xl-3 position-relative col-lg-3 col-md-3">
 
                         <div class="productImage">
                             <img src="./resources/headphone.png" alt="" class="img-fluid">
@@ -451,7 +455,7 @@
 
                     </div>
 
-                    <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                    <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3 col-md-3">
 
                         <div class="productImage">
                             <img src="./resources/phone2.png" alt="" class="img-fluid">
@@ -465,7 +469,7 @@
 
                     </div>
 
-                    <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                    <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3 col-md-3">
 
                         <div class="productImage">
                             <img src="./resources/controller.png" alt="" class="img-fluid">
@@ -481,7 +485,7 @@
 
                     </div>
 
-                    <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                    <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3 col-md-3">
 
                         <div class="dealType position-absolute">
                             <span>HOT</span>
@@ -501,7 +505,7 @@
 
                     </div>
 
-                    <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                    <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3 col-md-3">
 
                         <div class="offersPercentage position-absolute">
                             <span>32% OFF</span>
@@ -567,7 +571,7 @@
 
         <section class="productCategoryTab d-flex mt-5">
 
-            <div class="discountTab col-xl-3 d-flex justify-content-between flex-column col-lg-3">
+            <div class="discountTab col-xl-3 d-flex justify-content-between flex-column col-lg-3 col-md-3">
                 <span>COMPUTER & ACCESSORIES</span>
                 <h3>32% Discount</h3>
                 <span>For all ellectronics products</span>
@@ -576,7 +580,7 @@
                 <img src="./resources/desktop_Image.jpg" alt="" class="img-fluid">
             </div>
 
-            <div class="featuresProductTab col-xl-9 col-lg-9">
+            <div class="featuresProductTab col-xl-9 col-lg-9 col-md-9">
                 <div class="featuresProduct--Navigation d-flex justify-content-between">
 
                     <h5>Featured Products</h5>
@@ -591,10 +595,10 @@
                     </div>
                 </div>
 
-                <div class="ProductItems col-xl-12 col-lg-12">
+                <div class="ProductItems col-xl-12 col-lg-12 col-md-12">
                     <div class="seperator_productItems row">
 
-                        <div class="eachProduct col-xl-3 position-relative  col-lg-3">
+                        <div class="eachProduct col-xl-3 position-relative  col-lg-3 col-md-3">
                             <div class="offersPercentage position-absolute">
                                 <span>32% OFF</span>
                             </div>
@@ -613,7 +617,7 @@
 
                         </div>
 
-                        <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct col-xl-3 position-relative col-lg-3 col-md-3">
 
                             <div class="productImage">
                                 <img src="./resources/phone1.png" alt="" class="img-fluid">
@@ -629,7 +633,7 @@
 
                         </div>
 
-                        <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct col-xl-3 position-relative col-lg-3 col-md-3">
 
                             <div class="offersPercentage position-absolute">
                                 <span>32% OFF</span>
@@ -647,7 +651,7 @@
 
                         </div>
 
-                        <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct col-xl-3 position-relative col-lg-3 col-md-3">
 
                             <div class="productImage">
                                 <img src="./resources/headphone.png" alt="" class="img-fluid">
@@ -663,7 +667,7 @@
 
                         </div>
 
-                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3 col-md-3">
 
                             <div class="productImage">
                                 <img src="./resources/phone2.png" alt="" class="img-fluid">
@@ -677,7 +681,7 @@
 
                         </div>
 
-                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3 col-md-3">
 
                             <div class="productImage">
                                 <img src="./resources/controller.png" alt="" class="img-fluid">
@@ -693,7 +697,7 @@
 
                         </div>
 
-                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3 col-md-3">
 
                             <div class="dealType position-absolute">
                                 <span>HOT</span>
@@ -715,7 +719,7 @@
 
 
 
-                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3 col-md-3">
 
                             <div class="offersPercentage position-absolute">
                                 <span>32% OFF</span>
@@ -747,31 +751,31 @@
         <section class="advertisementOffers container mt-4">
 
             <div class="advertisement_Seperator row">
-                <div class="advertisement__offerProduct1 col-xl-6 col-lg-6">
+                <div class="advertisement__offerProduct1 col-xl-6 col-lg-6 col-md-6">
                     <div class="img_content1 row">
-                        <div class="adOfferProduct1--content col-xl-6 align-self-center p-3 col-lg-6">
+                        <div class="adOfferProduct1--content col-xl-6 align-self-center p-3 col-lg-6 col-md-6">
                             <span>INTRODUCING</span>
                             <h4>New Apple Homepod Mini</h4>
                             <p>Jam-packed with innovation, HomePod mini delivers unexpectedly.</p>
                             <button class="btn">SHOP NOW &#8594</button>
 
                         </div>
-                        <div class="offerProduct1-image col-xl-6 col-lg-6">
+                        <div class="offerProduct1-image col-xl-6 col-lg-6 col-md-6">
                             <img src="./resources/alexa.png" alt="" class="img-fluid">
                         </div>
                     </div>
 
                 </div>
 
-                <div class="advertisement__offerProduct2 col-xl-6 col-lg-6">
+                <div class="advertisement__offerProduct2 col-xl-6 col-lg-6 col-md-6">
                     <div class="img_content2 row align-self-center p-3">
-                        <div class="offerProduct2--content col-xl-6 col-lg-6">
+                        <div class="offerProduct2--content col-xl-6 col-lg-6 col-md-6">
                             <span>INTRODUCING NEW</span>
                             <h4>Xiaomi Mi 11 Ultra 12GB+256GB</h4>
                             <p>*Data provided by internal laboratories. Industry measurment.</p>
                             <button class="btn">SHOP NOW &#8594</button>
                         </div>
-                        <div class="offerProduct2-image col-xl-6 col-lg-6">
+                        <div class="offerProduct2-image col-xl-6 col-lg-6 col-md-6">
                             <img src="./resources/poco.png" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -780,7 +784,7 @@
         </section>
 
         <section class="accessories row  mt-5">
-            <div class="featuresProductTab col-xl-9 col-lg-9">
+            <div class="featuresProductTab col-xl-10 col-lg-9 col-md-9">
                 <div class="featuresProduct--Navigation d-flex justify-content-between">
 
                     <p>Computer Accessories</p>
@@ -795,29 +799,24 @@
                     </div>
                 </div>
 
-                <div class="ProductItems col-xl-12 col-lg-12">
-                    <div class="seperator_productItems row">
+                <div class="ProductItems ">
+                    <div class="seperator_productItems d-flex flex-wrap gap-2">
 
-                        <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct position-relative">
                             <div class="offersPercentage position-absolute">
                                 <span>32% OFF</span>
                             </div>
 
-                            <div class="productImage">
-                                <img src="./resources/drone.png" alt="" class="img-fluid">
-                            </div>
+                            <img src="./resources/drone.png" alt="" class="img-fluid">
 
-                            <div class="text">
-                                <p>Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...</p>
-                            </div>
+                            <p>Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...</p>
 
-                            <div class="price">
-                                <p>$2,300</p>
-                            </div>
+                            <p>$2,300</p>
+
 
                         </div>
 
-                        <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct position-relative">
 
                             <div class="productImage">
                                 <img src="./resources/phone1.png" alt="" class="img-fluid">
@@ -833,7 +832,7 @@
 
                         </div>
 
-                        <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct position-relative">
 
                             <div class="offersPercentage position-absolute">
                                 <span>32% OFF</span>
@@ -851,7 +850,7 @@
 
                         </div>
 
-                        <div class="eachProduct col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct position-relative">
 
                             <div class="productImage">
                                 <img src="./resources/headphone.png" alt="" class="img-fluid">
@@ -867,7 +866,7 @@
 
                         </div>
 
-                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct position-relative">
 
                             <div class="productImage">
                                 <img src="./resources/phone2.png" alt="" class="img-fluid">
@@ -881,7 +880,7 @@
 
                         </div>
 
-                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct position-relative ">
 
                             <div class="productImage">
                                 <img src="./resources/controller.png" alt="" class="img-fluid">
@@ -897,7 +896,7 @@
 
                         </div>
 
-                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct position-relative ">
 
                             <div class="dealType position-absolute">
                                 <span>HOT</span>
@@ -917,9 +916,7 @@
 
                         </div>
 
-
-
-                        <div class="eachProduct gridTemplate col-xl-3 position-relative col-lg-3">
+                        <div class="eachProduct position-relative">
 
                             <div class="offersPercentage position-absolute">
                                 <span>32% OFF</span>
@@ -947,7 +944,7 @@
             </div>
 
 
-            <div class="computerAccessories col-xl-3 col-lg-3">
+            <div class="computerAccessories col-xl-2 col-lg-3 col-md-3">
                 <div class="computerAccessories--offer1  text-center p-2">
                     <img src="./resources/wireless_headphone.png" alt="">
                     <h4> Xiaomi True Wireless Earbuds</h4>
@@ -965,20 +962,20 @@
         </section>
 
         <section class="specialOffer row mt-5">
-            <div class="special__details col-xl-7 align-self-center col-lg-7">
+            <div class="special__details col-xl-7 align-self-center col-lg-7 col-md-7">
                 <span>SAVE UP TO $200.00</span>
                 <h2>Macbook Pro</h2>
                 <h5>Apple M1 Max Chip. 32GB Unified <br> 1TB SSD Storage</h5>
                 <button class="btn">SHOP NOW &#8594</button>
             </div>
 
-            <div class="specialOffer--image col-xl-4 col-lg-4">
+            <div class="specialOffer--image col-xl-4 col-lg-4 col-md-4">
                 <img src="./resources/mac.png" alt="" class="img-fluid">
             </div>
         </section>
 
         <section class="salesCategory row mt-5">
-            <div class="salesCategory--Tab col-xl-3 col-lg-3">
+            <div class="salesCategory--Tab col-xl-3 col-lg-3 col-md-6">
                 <strong>FLASH SALE TODAY</strong>
                 <div class="saleProductTab  mt-4">
                     <div class="productDetail d-flex p-2">
@@ -1014,7 +1011,7 @@
 
             </div>
 
-            <div class="salesCategory--Tab col-xl-3 col-lg-3">
+            <div class="salesCategory--Tab col-xl-3 col-lg-3 col-md-6">
                 <strong>BEST SELLERS</strong>
                 <div class="saleProductTab  mt-4">
                     <div class="productDetail d-flex p-2">
@@ -1050,7 +1047,7 @@
 
             </div>
 
-            <div class="salesCategory--Tab col-xl-3 col-lg-3">
+            <div class="salesCategory--Tab col-xl-3 col-lg-3 col-md-6">
                 <strong>TOP RATED</strong>
                 <div class="saleProductTab  mt-4">
                     <div class="productDetail d-flex p-2">
@@ -1086,7 +1083,7 @@
 
             </div>
 
-            <div class="salesCategory--Tab col-xl-3 col-lg-3">
+            <div class="salesCategory--Tab col-xl-3 col-lg-3 col-md-6">
                 <strong>NEW ARRIVAL</strong>
                 <div class="saleProductTab  mt-4">
                     <div class="productDetail d-flex p-2">
@@ -1130,7 +1127,7 @@
                 <p>Latest News</p>
             </div>
             <section class="latestNews__Section row">
-                <div class="latestNews__newspages col-xl-4 col-lg-4">
+                <div class="latestNews__newspages col-xl-4 col-lg-4 col-md-6">
                     <div class="newsImage">
                         <img src="./resources/news_image1.png" alt="" class="img-fluid">
                     </div>
@@ -1203,7 +1200,7 @@
 
                 </div>
 
-                <div class="latestNews__newspages col-xl-4 col-lg-4">
+                <div class="latestNews__newspages col-xl-4 col-lg-4 col-md-6">
                     <div class="newsImage">
                         <img src="./resources/news_image1.png" alt="" class="img-fluid">
                     </div>
@@ -1276,7 +1273,7 @@
 
                 </div>
 
-                <div class="latestNews__newspages col-xl-4 col-lg-4">
+                <div class="latestNews__newspages col-xl-4 col-lg-4 text-center">
                     <div class="newsImage">
                         <img src="./resources/news_image1.png" alt="" class="img-fluid">
                     </div>
@@ -1444,7 +1441,7 @@
 
         <section class="link container p-3">
             <section class="seperator_linkTab row">
-                <div class="link__companydetails col-xl-3 col-lg-3">
+                <div class="link__companydetails col-xl-3 col-lg-3 col-md-4">
                     <div class="link__companydetails--seperator d-flex">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1461,7 +1458,7 @@
                     </div>
                 </div>
 
-                <div class="link--topCategory col-xl-2 col-lg-2">
+                <div class="link--topCategory col-xl-2 col-lg-2 col-md-4">
                     <div class="link--title">
                         <p>TOP CATEGORY</p>
                     </div>
@@ -1476,7 +1473,7 @@
                     </div>
                 </div>
 
-                <div class="quicklinks col-xl-2 col-lg-2">
+                <div class="quicklinks col-xl-2 col-lg-2 col-md-4 ">
                     <div class="link--title">
                         <p>QUICK LINKS</p>
                     </div>
@@ -1491,7 +1488,7 @@
                     </div>
                 </div>
 
-                <div class="downloadApps col-xl-2 col-lg-2">
+                <div class="downloadApps col-xl-2 col-lg-2 col-md-3">
                     <div class="link--title">
                         <p>DOWNLOAD APP</p>
                     </div>
@@ -1534,7 +1531,7 @@
 
 
 
-                <div class="link--popularTag col-xl-3 col-lg-3">
+                <div class="link--popularTag col-xl-3 col-lg-3 col-md-4">
                     <div class="link--title">
                         <p>POPULAR TAG</p>
                     </div>
