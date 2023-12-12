@@ -90,11 +90,12 @@ form {
     background-color: #F2F4F5;
   }
 
-  
+  .offerProduct1Content{
+    background-color: #191C1F;
+  }
 
   .offerProduct1{
     border-radius: 0.5em; 
-    background-color: #191C1F;
   }
   
 .displayItem span{
@@ -111,8 +112,8 @@ form {
 .circle {
     background-color: #2DA5F3;
     width: 5em;
-    right: 5em;
-    top:1em;
+    right: 2rem;
+    top:1rem;
     line-height: 5em;
     border-radius: 50%;
     text-align: center;
@@ -161,6 +162,7 @@ form {
 }
 
 .eachProduct{
+  width: 15rem;
   border:1px solid #E4E7E9;
 }
 
@@ -240,11 +242,7 @@ form {
    color: #77878F;
 }
 
-.eachProduct{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 
 .productImage{
   padding-top:0.5em;
@@ -363,6 +361,7 @@ form {
   border:0.1em solid #E4E7E9;
 }
 .popupPage_signin{
+  display: none;
    top:9em;
    right:12em;
 }

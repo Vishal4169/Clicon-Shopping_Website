@@ -1,40 +1,50 @@
 import './App.css';
-import { useState} from "react";
+import { useEffect, useState } from "react";
+import {TaskElement} from './component.js'
 
-//Change the Color of the Text for Responsive windows
+const catApi=fetch('https://cat-fact.herokuapp.com/facts/random')
+  .then(response => response.json())
+  .then(data => console.log(data.text))
+  .catch(error => console.error(error));
 function App() {
 
-  let [initial,setChange] = useState(0);
 
- 
-  
-   const increaseFunction = () =>{
-    setChange(initial+1) 
- 
-   }
 
-   const DecreaseFunction =() =>{
-     setChange(initial-1)
-   }
+  const [addToArray,setTaskArray] = useState([]);
+  const [createTask,setNewTask] = useState("");
   
-   const setToZero =() =>{
-    setChange(0);
-   }
+  const taskCreation = (event) =>{
+    setNewTask(event.target.value);
+  }
+
+  useEffect(() =>{
+    console.log("mounted");
+  })
+
+  const addTask = () =>{
+    setTaskArray([...addToArray,createTask]);
+  }
+  
+  const deleteTask = (item) =>{
+   const newVal = addToArray.filter((ele)=>{
+       return ele !== item;
+    })
+    setTaskArray(newVal)
+  }
 
   return(
     <div className="App">
-
-      <h1>{initial}</h1>
-
-      <button onClick={increaseFunction}>
-      Increase
-      </button> 
-       
-      <button onClick={DecreaseFunction}>
-        Decrease
-      </button>
-
-      <button onClick={setToZero}>Set To Zero</button>
+        <div className="newTask">
+            <input onChange={taskCreation}/>
+            <button onClick={addTask}>ToDo</button>
+            {catApi.text}
+        </div>
+        <div className="displayContent"> 
+           {addToArray.map((ele)=>{
+          
+              return   <TaskElement item={ele} deleteTask={deleteTask} />
+            })}
+      </div>
     </div>
   );
  
