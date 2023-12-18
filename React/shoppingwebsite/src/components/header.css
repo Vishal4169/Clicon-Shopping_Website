@@ -1,0 +1,27 @@
+.advertisementPopup {
+    color:#FFFF;
+    background-color: #191C1F;
+}
+
+.ad_alignText{
+    display: inline-block;
+    background-color: #F3DE6D;
+    padding:0.1rem;
+    color:#191C1F;
+    transform: rotate(-4deg);
+
+}
+
+.adOffer--bold{
+    display: inline-flex;
+    font-size: 1.4em;
+    color:#EBC80C
+}
+
+.advertisement__offers span{
+    align-self: center;
+}
+.socialMediaLinks,.nav{
+    background-color:#1B6392 ;
+    color:#FFFF;
+}

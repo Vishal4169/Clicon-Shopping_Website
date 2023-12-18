@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../shop_Page.html/shopPage.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <section style="background-color:#1B6392">
+            <section class="container">
+                <section class="socialMediaLinks d-flex justify-content-between p-2 ">
+                    <div class="socialMediaLinks--content ">
+                        <span>Welcome to Clicon online eCommerce store</span>
+                    </div>
+                    <div class="socialMediaComponents d-flex justify-content-between ">
+                        <div class="socialMediaLinks--followUs align-self-center">
+                            <span>Follows Us:</span>
+
+                            <i class="fa-brands fa-instagram fa-x"></i>&nbsp;
+                            <i class="fa-brands fa-facebook fa-x"></i>&nbsp;
+                            <i class="fa-brands fa-youtube fa-x"></i>&nbsp;
+                            <i class="fa-brands fa-pinterest fa-x"></i>&nbsp;
+                            <i class="fa-brands fa-reddit fa-x"></i>
+                        </div>
+
+                        <div class="blank_line"></div>
+                        <div class="socialMedia_language-country d-flex gap-1">
+                            <select class="form-select" aria-label="Disabled select example">
+                                <option selected>Eng</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select" aria-label="Disabled select example">
+                                <option selected>USD</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+            <div class="line"></div>
+
+            <section class="container  position-relative">
+                <section class="nav d-flex justify-content-between p-2">
+
+                    <div class="navigation--companyIcon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24ZM36 24C36 30.6274 30.6274 36 24 36C17.3726 36 12 30.6274 12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24ZM24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z"
+                                fill="white" />
+                        </svg>
+                        <span>CLICON</span>
+                    </div>
+
+                    <div class="navigation--searchTab ">
+
+                        <form>
+                            <input type="search" placeholder="Search for anything...">
+                            <button type="submit">Search</button>
+                        </form>
+
+                    </div>
+
+                    <div class="navigation--icons d-flex gap-3 align-self-center">
+                        <i class="fa-solid fa-cart-shopping fa-lg" onclick="mouseoverevent_favorite()"></i>
+                        <i class="fa-regular fa-heart fa-lg"></i>
+                        <i class="fa-regular fa-user fa-lg " onclick="mouseoverevent()"></i>
+                    </div>
+
+
+                </section>
+
+            </section>
+        </section>
+
+
+
+
+        <section class="container ">
+            <section class="categoryTab  d-flex justify-content-between p-2">
+                <div class="essential d-flex gap-3  ">
+
+                    <select>
+                        <option value="category">All Category</option>
+                        <option value="">Computer & Laptop</option>
+                        <option value="">Computer Accessories</option>
+                        <option value="">SmartPhone</option>
+                        <option value="">Headphone</option>
+                        <option value="">Mobile Accessories</option>
+                        <option value="">Gaming Console</option>
+                        <option value="">Camera & Photo</option>
+                        <option value="">TV & Homes Appliances</option>
+                        <option value="">Watchs & Accessories</option>
+                        <option value="">GPS & Navigation</option>
+                        <option value="">Warable Technology</option>
+                    </select>
+
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Track Order</span>
+
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span>Compare</span>
+
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Customer Support</span>
+
+
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Need Help</span>
+
+
+                </div>
+                <div class="essential--dial">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+1-202-555-0104</span>
+                </div>
+            </section>
+        </section>
+
+        <div class="line"></div>
+
+    </header>
+
+    <main class="container mt-4">
+
+        <div class="row ">
+            <div class="categoryTypes col-md-3">
+                <h4>CATEGORY</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Electronics Devices
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Computer & Laptop
+                    </label>
+                </div>
+
+            </div>
+            <div class="productList col-md-9 d-flex flex-wrap gap-2 ">
+                <div class="eachProduct d-flex flex-column  position-relative product-div">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/camera.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/controller.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/drone.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/headphone.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/phone1.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/phone2.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/playstation1.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/poco.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/wireless_headphone.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/phone2.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/wireless_headphone.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/camera.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/mac.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/camera.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/joystick.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="eachProduct d-flex flex-column  position-relative">
+                    <div class="card p-2">
+                        <div class="offersPercentage position-absolute">
+                            <span>19% OFF</span>
+                        </div>
+
+                        <img src="../resources/camera.png" class="card-img-top" alt="...">
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="text">
+                            <p>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</p>
+                        </div>
+
+                        <div class="price">
+                            <p>$250</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+    </main>
+
+    <footer>
+        <section class="link container p-3">
+            <section class="seperator_linkTab row">
+                <div class="link__companydetails col-xl-3 col-lg-3 col-md-4">
+                    <div class="link__companydetails--seperator d-flex">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24ZM36 24C36 30.6274 30.6274 36 24 36C17.3726 36 12 30.6274 12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24ZM24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z"
+                                fill="#FA8232" />
+                        </svg>
+                        <h4 class="align-self-center">CLICON</h4>
+                    </div>
+                    <div class="link--contact mt-4">
+                        <span>Customer Supports:</span>
+                        <p>(629) 555-0129</p>
+                        <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+                        <p>info@kinbo.com</p>
+                    </div>
+                </div>
+
+                <div class="link--topCategory col-xl-2 col-lg-2 col-md-4">
+                    <div class="link--title">
+                        <p>TOP CATEGORY</p>
+                    </div>
+                    <div class="topCategory--products">
+                        <span>Computer & Laptop</span>
+                        <span>SmartPhone</span>
+                        <span>Headphone</span>
+                        <p>&mdash; Accessories</p>
+                        <span>Camera & Photo</span>
+                        <span>TV & Homes</span>
+                        <p>Browse All Product &#8594</p>
+                    </div>
+                </div>
+
+                <div class="quicklinks col-xl-2 col-lg-2 col-md-4 ">
+                    <div class="link--title">
+                        <p>QUICK LINKS</p>
+                    </div>
+                    <div class="quicklinks--items d-flex flex-column justify-content-between">
+                        <span>Shop Product</span>
+                        <span>Shoping Cart</span>
+                        <span>Wishlist</span>
+                        <span>Compare</span>
+                        <span>Track Order</span>
+                        <span>Customer Help</span>
+                        <span>About Us</span>
+                    </div>
+                </div>
+
+                <div class="downloadApps col-xl-2 col-lg-2 col-md-3">
+                    <div class="link--title">
+                        <p>DOWNLOAD APP</p>
+                    </div>
+
+                    <div class="link--app d-flex justify-content-between">
+                        <div class="link--icon align-self-center ">
+                            <svg width="30" height="32" viewBox="0 0 30 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.087 14.8129L5.29177 0.979304L22.8438 11.0561L19.087 14.8129ZM1.69017 0.166504C0.877374 0.592104 0.333374 1.3665 0.333374 2.3745V29.9585C0.333374 30.9665 0.877374 31.7409 1.69017 32.1665L17.7334 16.1633L1.69017 0.166504ZM28.271 14.2689L24.5894 12.1377L20.4822 16.1697L24.5894 20.2017L28.3462 18.0705C29.471 17.1761 29.471 15.1633 28.271 14.2689ZM5.29177 31.3601L22.8438 21.2833L19.087 17.5265L5.29177 31.3601Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+
+                        <div class="link--content ">
+                            <span>Get it now</span>
+                            <p>Google Play</p>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="link--app d-flex justify-content-between">
+                        <div class="link--icon align-self-center">
+                            <svg width="28" height="33" viewBox="0 0 28 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M27.056 25.438C26.5893 26.5249 26.013 27.5614 25.336 28.5313C24.4306 29.8213 23.69 30.714 23.1193 31.21C22.2346 32.0233 21.286 32.4407 20.2706 32.464C19.542 32.464 18.6633 32.2567 17.64 31.836C16.6133 31.4173 15.67 31.2093 14.8073 31.2093C13.9026 31.2093 12.9326 31.4173 11.8946 31.836C10.8553 32.2567 10.018 32.476 9.37796 32.4973C8.40463 32.5393 7.43396 32.1107 6.46463 31.21C5.84663 30.67 5.07396 29.746 4.14729 28.4367C3.15329 27.038 2.33596 25.4167 1.69596 23.5673C1.01063 21.5707 0.666626 19.6367 0.666626 17.7647C0.666626 15.62 1.12996 13.7707 2.05796 12.2207C2.78796 10.9753 3.75796 9.994 4.97263 9.27267C6.16428 8.55956 7.52398 8.17581 8.91263 8.16067C9.68596 8.16067 10.7 8.4 11.9606 8.87C13.2173 9.34133 14.024 9.58067 14.378 9.58067C14.642 9.58067 15.5386 9.30067 17.058 8.74333C18.4953 8.226 19.708 8.012 20.7013 8.09667C23.394 8.314 25.4166 9.37533 26.7613 11.2873C24.354 12.746 23.1626 14.7893 23.1866 17.4107C23.208 19.4527 23.9486 21.152 25.4046 22.5007C26.0646 23.1273 26.8013 23.6113 27.6206 23.9547C27.4488 24.4552 27.2605 24.9499 27.056 25.438ZM20.8813 1.14067C20.8813 2.74067 20.2966 4.23533 19.1313 5.618C17.7246 7.26267 16.024 8.21267 14.1793 8.06267C14.1545 7.86139 14.142 7.65879 14.142 7.456C14.142 5.92 14.8106 4.276 15.9986 2.93133C16.592 2.25067 17.3453 1.68467 18.26 1.23333C19.1733 0.788667 20.036 0.542667 20.848 0.5C20.8713 0.714 20.8813 0.928 20.8813 1.14V1.14067Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+
+                        <div class="link--content">
+                            <span>Get it now</span>
+                            <p>App Store</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="link--popularTag col-xl-3 col-lg-3 col-md-4">
+                    <div class="link--title">
+                        <p>POPULAR TAG</p>
+                    </div>
+                    <div class="link--button">
+                        <button>Game</button>
+                        <button>iPhone</button>
+                        <button>TV</button>
+                        <button>Asus Laptops</button>
+                        <button>Macbook</button>
+                        <button>SSD</button>
+                        <button>Graphics Card</button>
+                        <button>Power Bank </button>
+                        <button>Smart TV</button>
+                        <button>Speaker</button>
+                        <button>Tablet</button>
+                        <button>Microwave</button>
+                        <button>Samsung</button>
+                    </div>
+                </div>
+
+
+            </section>
+
+        </section>
+    </footer>
+
+    <!-- <script>
+        const newPage = document.getElementsByClassName("eachProduct");
+        console.log(newPage)
+        let classLength = newPage.length;
+        console.log(classLength);
+    </script> -->
+</body>
+<script src="../script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+</html>
