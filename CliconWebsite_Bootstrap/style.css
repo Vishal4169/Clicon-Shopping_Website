@@ -373,3 +373,12 @@ form {
 .searchBar{
   border: 0.2em solid #E4E7E9;
 }
+
+
+.eachProduct .productImage:hover{
+  background-color: #303639;
+}
+
+.productImage img{
+  background-color: transparent;
+}

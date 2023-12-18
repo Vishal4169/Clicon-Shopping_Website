@@ -336,7 +336,15 @@
             <div class="bestIdeal__title d-flex justify-content-between ">
                 <h4>Best deals</h4>
                 <p class="p-1">Deals ends in</p>
-                <h5 class="timer p-1">16d : 21h : 57m : 23</h5>
+
+                <div class="timer p-1">
+                    <span class="hour">00</span>
+                    <span>:</span>
+                    <span class="minute">00</span>
+                    <span>:</span>
+                    <span class="second">00</span>
+                </div>
+
             </div>
             <div class="listProduct">
                 <p>Browse All Product &#8594</p>
@@ -1571,6 +1579,21 @@
             }
 
         }
+
+        let hour = document.getElementsByClassName("hour")[0];
+        let minute = document.getElementsByClassName("minute")[0];
+        let second = document.getElementsByClassName("second")[0];
+
+        console.log(second)
+
+        setInterval(() => {
+            let currentTime = new Date();
+            hour.innerHTML = currentTime.getHours();
+            minute.innerHTML = currentTime.getMinutes();
+            second.innerHTML = currentTime.getSeconds();
+
+        }, 1000)
+
     </script>
 
 
