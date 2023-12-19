@@ -1,7 +1,7 @@
 import './App.css';
 
 import {AdPopup} from "./components/AdPopup.js"
-import 'bootstrap/dist/css/bootstrap.min.css';  
+
 import {headphone , alexa , camera_Image , controller} from './resources/index.js'; 
 import { CliconSearchTab } from './components/CliconSearchTab.js';
 
